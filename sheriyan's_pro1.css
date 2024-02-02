@@ -1,0 +1,148 @@
+*{
+margin: 0;
+padding: 0;
+font-family: "Gilroy";
+box-sizing: border-box;
+}
+html,body{
+                                                                                        height: 100% ;                                                                   width: 100%;            
+}
+#main{
+/* background-color: cornsilk;  */
+height: 100% ;                                                                   width: 100%;  
+display: flex;   
+
+}
+#left{
+width:50%;
+height:100%;
+/* background-color: rgba(203, 0, 243, 0.308); */
+position: relative;
+}
+#leftnav{
+width:100%;
+ padding: 20px 30px;
+ font-size: 20px;
+ display: flex;
+ /* flex-direction: column; */
+ justify-content: space-between;
+ 
+}
+#leftnav a{
+margin-right: 20px; 
+text-decoration: none;  
+color: black;
+/* padding-right:30px;          */
+font-weight: 500;
+font-size: 14px;
+}
+#leftnavabar{
+  display: flex; 
+  align-items: center;   
+                                                                                                
+}
+#leftnavabar p{
+                                                                                             color: blue;       
+}
+#left #textcenter{
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+#textcenter h1{
+font-size: 90px;
+font-weight: 800;
+}
+#textcenter p{
+ opacity: .6;
+ font-size: 12px;
+ line-height: 20px; 
+ margin-top: 20px;
+ margin-bottom: 20px;
+
+}
+#textcenter a{
+                                                                                                    text-decoration: none;
+                                                                                                    color: black;
+                                                                                                    border-bottom: 1px solid black;
+                                                                                                    padding-bottom: 5px;
+                font-size: 13px;                                                           font-weight:600 ;
+                opacity: .6;
+ }
+
+#right{
+height: 100% ;                                                                   width: 100%;    
+background-color: crimson;          
+}
+#righttop{
+display: flex;
+height: 50% ;                                                                   width: 100%;                                                                                  background-color: darkorange;                   
+}
+#rightbottom{
+height: 50% ;                                                                   width: 100%;           
+background-image: url( 'pexels-pixabay-269255.jpg');  
+background-size: cover;
+background-position: center;                   
+}
+
+
+#righttopleft{
+height: 100% ;                                                                   width: 55%;  
+
+background-image: url( 'koppens-1445419.jpg');  
+background-size: cover;
+background-position: center;                                                                                              
+}
+#righttopright{
+height: 100% ;                                                                   width: 45%;                                                                                   background-image: url( 'pexels-jessica-lewis-🦋-thepaintedsquare-820902.jpg');  
+background-size: cover;
+background-position: center;                   
+}
+/* write media queriesss */
+/* for phoness */
+@media (max-width:600px) {
+    #main{
+      flex-direction: column;                                                                                              
+    } 
+    #main #left{
+                                                                                                    width:100%;
+    }                                                                                 #main #right{
+                                                                                                    width:100% ;
+    }              
+}
+/* for tabletssss */
+@media (max-width:768px) {
+#main{
+flex-direction: column;                                                                                              
+} 
+#main #left{
+width:100%;
+}                                                                                 #main #right{
+width:100% ;
+}              
+}
+/* it is for laptopssss */
+@media (max-width:768)and (min-width:992px) {
+#main{
+flex-direction: row;                                                                                  } 
+#main #left{
+width:100%;
+
+
+}                                                                       
+#main #right{
+width:100% ;
+}              
+}
+/* it is for desktop secreens */
+@media (max-width:992)and (min-width:1200px){
+#main{
+flex-direction: row;                                                                                  } 
+#main #left{
+width:100%;
+} 
+#main #right{
+ width:100% ;
+ }                                                                                                       
+}
